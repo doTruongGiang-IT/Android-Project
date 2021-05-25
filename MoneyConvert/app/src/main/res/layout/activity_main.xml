@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vien"
+        android:backgroundTint="@color/black"
+        android:text="CÂU 2: Đổi tỉ giá tiền tệ"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="211dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/tien" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/vien"
+        android:text="Tiền nguồn"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="245dp"
+        android:textColor="@color/black"
+        android:background="@drawable/vien"
+        android:text="Tiền đích"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="15dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="220dp"
+        android:backgroundTint="@color/black"/>
+
+    <EditText
+        android:id="@+id/edittext1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:backgroundTint="#808080" />
+    <EditText
+        android:id="@+id/edittext2"
+        android:inputType="none"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="220dp"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:enabled="false"
+        android:backgroundTint="#808080" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="490dp"
+        android:layout_marginLeft="90dp"
+        android:backgroundTint="@color/black"
+        android:text="Convert" />
+
+
+</RelativeLayout>
