@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/Icon"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/taco"
+        android:contentDescription="TacoShop Icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Icon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="ORDERED"
+        android:textSize="30sp"
+        android:id="@+id/TV_1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/TV_1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Your Tacos: "
+        android:textSize="25sp"
+        android:id="@+id/TV_Taco"
+        app:layout_constraintHorizontal_bias="0.05"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/TV_Taco"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Size: "
+        android:textSize="20sp"
+        android:id="@+id/TV_Size"
+        app:layout_constraintHorizontal_bias="0.09"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/TV_Taco"
+        app:layout_constraintLeft_toRightOf="@+id/TV_Tor"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/TV_SizeDisplay"
+        android:textSize="20sp"
+        android:width="250dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/TV_Size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Tortilla: "
+        android:textSize="20sp"
+        android:id="@+id/TV_Tor"
+        app:layout_constraintHorizontal_bias="0.1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/TV_SizeDisplay"
+        app:layout_constraintLeft_toRightOf="@+id/TV_Tor"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/TV_TorDisplay"
+        android:textSize="20sp"
+        android:width="250dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/TV_Tor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Fillings: "
+        android:textSize="20sp"
+        android:id="@+id/TV_CheckboxFill"
+        app:layout_constraintHorizontal_bias="0.1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/TV_TorDisplay"
+        app:layout_constraintLeft_toRightOf="@+id/TV_CheckboxFill"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/TV_CheckboxFillDisplay"
+        android:width="250dp"
+        android:maxHeight="250dp"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/TV_CheckboxFillDisplay"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Beverage: "
+        android:textSize="20sp"
+        android:id="@+id/TV_CheckboxBeverage"
+        app:layout_constraintHorizontal_bias="0.1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/TV_CheckboxFillDisplay"
+        app:layout_constraintLeft_toRightOf="@+id/TV_CheckboxFill"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/TV_CheckboxBeverageDisplay"
+        android:width="250dp"
+        android:textSize="20sp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/TV_CheckboxBeverageDisplay"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_Map"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="Send SMS"
+        android:id="@+id/btn_sendSMS"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/TV_CheckboxBeverageDisplay"
+        app:layout_constraintLeft_toRightOf="@id/btn_sendSMS"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="Map"
+        android:id="@+id/btn_Map"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
